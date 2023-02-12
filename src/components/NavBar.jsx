@@ -97,7 +97,7 @@ export const NavBar = () => {
                 <a href="https://github.com/pennyjiang925">
                   <img src={github} alt="" />
                 </a>
-                <a href="https://www.facebook.com/">
+                <a href="https://www.facebook.com/penny.jiang1/">
                   <img src={facebook} alt="" />
                 </a>
                 <a href="https://www.linkedin.com/in/penny-jiang-871096198/">
