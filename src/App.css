@@ -46,11 +46,11 @@ select:focus {
 }
 
 p.success {
-  color: green;
+  color: #e58d05;
 }
 
 p.danger {
-  color: red;
+  color: white;
 }
 @media (min-width: 1700px) {
   main .container {
@@ -367,7 +367,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 /* contact */
 .contact {
   background: #3d6daa;
-  padding: 60px 0 60px 0;
+  padding: 60px 0 40px 0;
 }
 .contact img {
   width: 90%;
