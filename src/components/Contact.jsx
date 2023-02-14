@@ -27,7 +27,8 @@ export const Contact = () => {
     e.preventDefault();
     setButtonText('Sending...');
 
-    const response = await fetch('http://localhost:5000/#contact', {
+    const PORT = process.env.PORT || 'http://localhost:5000/';
+    const response = await fetch(`${PORT}/#contact`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json;charset=utf-8',

@@ -1,10 +1,9 @@
+import { PORT, EMAIL_USER, EMAIL_PASS } from './constants';
+
 const express = require('express');
 const router = express.Router();
 const cors = require('cors');
 const nodemailer = require('nodemailer');
-const PORT = 5000;
-const EMAIL_USER = 'peijiang925@gmail.com';
-const EMAIL_PASS = 'unvuxbcawrpiauxk';
 
 const app = express();
 app.use(cors());
