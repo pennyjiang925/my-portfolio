@@ -27,15 +27,17 @@ export const Contact = () => {
     e.preventDefault();
     setButtonText('Sending...');
 
-    const PORT = process.env.PORT || 'http://localhost:5000/';
-    const response = await fetch(`${PORT}/#contact`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json;charset=utf-8',
-      },
+    const response = await fetch(
+      'https://penny-portfolio.netlify.app:5000/#contact',
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json;charset=utf-8',
+        },
 
-      body: JSON.stringify(formDetails),
-    });
+        body: JSON.stringify(formDetails),
+      }
+    );
     setButtonText('Send');
     const result = await response.json();
     setFormDetails(formInitialDetails);
